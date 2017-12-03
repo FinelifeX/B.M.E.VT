@@ -3,6 +3,7 @@ package interfaces;
 import entities.User;
 import entities.UserLoginData;
 
+import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.List;
 
@@ -16,7 +17,7 @@ public interface UserLoginDao {
 
     public UserLoginData create();
 
-    public UserLoginData read(int user_id);
+    public UserLoginData read(int user_id, Connection connection);
 
     public void update(UserLoginData loginData);
 

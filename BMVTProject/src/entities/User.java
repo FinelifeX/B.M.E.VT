@@ -22,6 +22,9 @@ public class User {
 
     private UserLoginData loginData;
 
+    public User() {
+    }
+
     public User(String username, String email, UserLoginData loginData) {
         this.username = username;
         this.email = email;

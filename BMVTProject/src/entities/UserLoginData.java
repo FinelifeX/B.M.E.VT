@@ -14,6 +14,9 @@ public class UserLoginData {
 
     private String password;
 
+    public UserLoginData() {
+    }
+
     public UserLoginData(int id, int user_id, String password) {
         this.id = id;
         this.user_id = user_id;

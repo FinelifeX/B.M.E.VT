@@ -1,8 +1,6 @@
 package interfaces;
 
 import entities.Level;
-import entities.User;
-import servlets.LogoutServlet;
 
 import java.sql.SQLException;
 import java.util.List;

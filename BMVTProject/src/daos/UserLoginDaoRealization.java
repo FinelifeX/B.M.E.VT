@@ -3,6 +3,7 @@ package daos;
 import entities.UserLoginData;
 import interfaces.UserLoginDao;
 
+import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.List;
 
@@ -19,7 +20,7 @@ public class UserLoginDaoRealization implements UserLoginDao {
     }
 
     @Override
-    public UserLoginData read(int user_id) {
+    public UserLoginData read(int user_id, Connection connection) {
         return null;
     }
 

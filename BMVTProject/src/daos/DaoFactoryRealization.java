@@ -30,7 +30,7 @@ public class DaoFactoryRealization implements DaoFactory {
 
     @Override
     public UserDao getUserDao(Connection connection) {
-        return null;
+        return new UserDaoRealization();
     }
 
     @Override

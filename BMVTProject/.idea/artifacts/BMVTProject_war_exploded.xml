@@ -9,7 +9,7 @@
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="KotlinJavaScript" />
-          <element id="library" level="application" name="freemarker" />
+          <element id="library" level="project" name="lib" />
         </element>
       </element>
     </root>
