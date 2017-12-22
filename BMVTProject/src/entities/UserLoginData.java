@@ -14,6 +14,8 @@ public class UserLoginData {
 
     private String password;
 
+    private String salt;
+
     public UserLoginData() {
     }
 
@@ -26,6 +28,13 @@ public class UserLoginData {
     public UserLoginData(int user_id, String password) {
         this.user_id = user_id;
         this.password = password;
+    }
+
+    public UserLoginData(int id, int user_id, String password, String salt) {
+        this.id = id;
+        this.user_id = user_id;
+        this.password = password;
+        this.salt = salt;
     }
 
     public int getId() {
@@ -42,5 +51,21 @@ public class UserLoginData {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public int getUser_id() {
+        return user_id;
+    }
+
+    public void setUser_id(int user_id) {
+        this.user_id = user_id;
+    }
+
+    public String getSalt() {
+        return salt;
+    }
+
+    public void setSalt(String salt) {
+        this.salt = salt;
     }
 }

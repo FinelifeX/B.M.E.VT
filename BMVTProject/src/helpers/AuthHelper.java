@@ -24,8 +24,6 @@ public class AuthHelper {
 
     public static boolean isLogin(HttpServletRequest request) {
         User user = (User) request.getSession().getAttribute("current_user");
-        //TODO Проверка наличия такого юзера в БД
-        //Заглушка
        if (user == null) {
            return false;
        }
